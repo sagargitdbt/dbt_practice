@@ -1,0 +1,1 @@
+select * from {{source('siva','EMP')}} where DEPTNO=10

@@ -1,0 +1,1 @@
+select * from {{source('murali','EMP_DEPT_VIEW')}}

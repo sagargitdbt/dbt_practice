@@ -1,0 +1,13 @@
+version: 2
+seeds:
+  - name: "country_codes"
+    config:
+      quote_columns: false
+      delimiter: "|"
+      column_types: 
+        country_id: varchar(2)
+        sale_date: DATE
+  - name: "country_codes_1"
+    config:
+      quote_columns: false
+      delimiter: "~"
