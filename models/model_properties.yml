@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: "emp_10"
+    config:
+      materialized: "table"
+  
+  - name: "emp_20"
+    config:
+      materialized: "table"
+  
+  - name: "emp_30"
+    config: 
+      materialized: "table"
+
+sources:
+  - name: siva
+    database: DBT_DB
+    schema: RAW_SCHEMA
+    tables:
+      - name: EMP
+        description: "This table contains raw user data from our application."
+      - name: DEPT
+        description: "This table contains raw dept data from our application."
+      - name: EMP_STG
+        description: "This table contains raw emp data from our application."
+      - name: JAYARAM
+        description: "This table contains raw emp data from our application."
+  - name: murali
+    database: DBT_DB
+    schema: DBT_SCHEMA
+    tables:
+      - name: EMP_DEPT_VIEW
+        description: "This table contains raw user data from our application."
