@@ -1,0 +1,1 @@
+select * from DBT_DB.RAW_SCHEMA.EMP where DEPTNO=20
